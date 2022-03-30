@@ -66,7 +66,7 @@ function Board(props) {
                         props.setGameWinner(`Game Drawn`)
                 }
         }
-        useEffect(callWinner, [squares,turn,callWinner])
+        useEffect(()=>{callWinner(turn)}, [squares,callWinner,turn])
 
         const createSquare = (i) => {
                 return <Square value = {squares[i]} click = {() => {handleClick(i)}} />
