@@ -1,0 +1,25 @@
+.boardComponent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+           
+}
+button{
+        color: seagreen
+}
+.table{
+        background-color: salmon;
+        margin-top: 20px;
+}
+
+#status{
+        margin-top: 10%; 
+        color: blue;
+        font-weight: 600;
+}
+h1{
+        margin-top: 10%;
+        font-size: 40px;
+        color: red;
+}
