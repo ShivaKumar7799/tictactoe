@@ -1,24 +1,12 @@
-.boardComponent{
+.board{
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         flex-direction: column;
-           
-}
-button{
-        color: seagreen
-}
-.table{
-        background-color: salmon;
-        margin-top: 20px;
-}
-
-#status{
-        margin-top: 5%; 
-        color: blue;
-        font-weight: 600;
+        margin-bottom: 20px;
 }
 h1{
-        font-size: 40px;
         color: red;
+        text-shadow: 3px 3px 5px salmon;
+        font-size: 40px;
 }

@@ -3,20 +3,21 @@ import Board from './Board/board'
 import './game.css'
 
 function Game() {
-  const [gameWinner,setGameWinner] = useState(" ");
+        const [gameWinner,setGameWinner] = useState(null);
+        const [gameStatus,setGameStatus] = useState(null)
 
-  const getWinner = (turnValue) => {
-      if(turnValue){
-        setGameWinner(`Game winner : ${turnValue}`)
-      } 
-  }
-
+        const getWinner = (winnerStatus) => {
+            setGameWinner(`Game winner: Player ${winnerStatus}`);
+        }
   return (
-   <div >
-      <Board setGameWinner = {setGameWinner}  gameWinner = {gameWinner} getWinner = {(turnValue) => {getWinner(turnValue)}} />
-      <span className='game' > {gameWinner} </span>
-   </div>
-  )
+    <div className = "game" >
+        <Board  setGameStatus = {setGameStatus} gameWinner= {gameWinner}
+                setGameWinner = {setGameWinner}
+                getWinner = {(winnerStatus)=> {getWinner(winnerStatus)}} />
+        <span className='gameSpan' > {gameWinner}</span>
+        <span className='gameSpan' id='gameStatus' >{gameStatus}</span>
+    </div>
+  )  
 }
 
 export default Game

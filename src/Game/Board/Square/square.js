@@ -3,11 +3,10 @@ import './square.css'
 
 function Square(props) {
   return (
-    <>
-      <button className='squareBtn' onClick={props.click} > {props.value} </button>
-    </>
+    <div>
+       <button onClick={props.click} > {props.value} </button>
+    </div>
   )
 }
 
 export default Square
-
